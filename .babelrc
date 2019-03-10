@@ -1,0 +1,11 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "modules": "cjs",
+        "loose": true
+      }
+    ]
+  ]
+}

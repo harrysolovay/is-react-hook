@@ -1,0 +1,1 @@
+const {isHook, isHookName} from './build'
