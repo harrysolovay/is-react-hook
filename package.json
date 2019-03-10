@@ -1,20 +1,23 @@
 {
   "name": "is-react-hook",
-  "description": "Check if the argument is a React Hook, or the name of a Ract Hook",
+  "description": "Check if the argument is a React Hook, or the name of a React Hook",
   "author": "Harry Solovay",
   "version": "1.0.0",
   "main": "build.js",
+  "types": "index.d.ts",
+  "private": false,
   "license": "MIT",
-  "peerDependencies": {
+  "dependencies": {
     "react": "^16.8.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4"
+    "@babel/preset-env": "^7.3.4",
+    "ava": "^1.3.1"
   },
   "scripts": {
     "build": "babel index.js --out-file build.js",
-    "prepublish": "yarn build"
+    "prepublish": "yarn build && ava"
   }
 }
